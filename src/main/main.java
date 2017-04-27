@@ -1,6 +1,8 @@
+package main;
 import common.emplacement;
 import common.lieustockage;
 import common.materiel;
+import common.menuprincipal;
 import entites.cartegraphique;
 import entites.disquedur;
 import entites.ecran;
@@ -8,7 +10,7 @@ import entites.imprimante;
 import entites.unitecentrale;
 
 public class main {
-
+	
 	public static void main(String[] args) {
 		cartegraphique cg1 = new cartegraphique ("Geforce GTX680", "Nvidia", 5);
 		disquedur dd1 = new disquedur ("Kingston 5000C", "Kingston", 1000, false);
@@ -16,6 +18,7 @@ public class main {
 		imprimante imp1 = new imprimante ("Bizhub C308", "Konica", true, true);
 		unitecentrale uc1 = new unitecentrale ("ACEAN1506","Fujitsu", 15, 1000,"Intel I5-5400");
 		
+
 /*************************************************/
 /*AFFICHER LES CG*/
 /*************************************************/
@@ -61,8 +64,10 @@ public class main {
 		ls1.ajouter(emp3);
 		ls1.ajouter(emp4);
 		ls1.ajouter(emp5);
-		ls1.afficher();
-		
+		//ls1.afficher();
+	
+		new menuprincipal(ls1);
 	}
+	
 
 }

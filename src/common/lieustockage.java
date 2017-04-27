@@ -23,7 +23,6 @@ public class lieustockage {
 		for (emplacement m : listelieustockage){
 			m.donneemplacement();
 			m.liste();
-	
 		}
 	}
 }
