@@ -3,21 +3,20 @@ import main.main;
 
 import java.util.Scanner;
 
-public class menuprincipal {
+public class menuprincipal extends menu2 {
 
 	private lieustockage lieustockage;
-
-	public menuprincipal(){
-		super();
-		getLieustockage();
-	}
 	
+	public menuprincipal() {
+		super();
+		printMenu();
+	}
+
 	public menuprincipal(lieustockage l){
 		super();
 		this.lieustockage = l;
 		printMenu();
 	}
-	
 	
 	public void printMenu() {
 			System.out.println("-----MENU-----");
@@ -31,18 +30,20 @@ public class menuprincipal {
 	        switch (choixmenu) {
 	            case 1:  getLieustockage().afficher();
 	                     break;
-	            case 2:  
+	                     
+	            case 2:  super.menuenregistrer();
 	                     break;
+	                     
 	            case 3:  
 	                     break;
+	                     
 	            case 4:  System.exit(0);
-	                     break;
-	            default: 
 	                     break;
 	        }
 			
 			
 		}
+
 
 	public lieustockage getLieustockage() {
 		return lieustockage;

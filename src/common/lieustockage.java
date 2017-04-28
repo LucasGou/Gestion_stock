@@ -24,5 +24,6 @@ public class lieustockage {
 			m.donneemplacement();
 			m.liste();
 		}
+	new menuprincipal(); // à modifier pour avoir le menuprincipal avec lieustockage existant (ici recreer et donc efface)
 	}
 }

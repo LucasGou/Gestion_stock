@@ -2,7 +2,10 @@ package common;
 
 import java.util.Scanner;
 
-public class menu2 extends menuprincipal{
+import entites.cartegraphique;
+
+public class menu2 extends materiel{
+
 	public void menuenregistrer() {
 		System.out.println("----ENREGISTREMENT----");
 		System.out.println("Pour enregistrer une carte graphique : tapez 1");
@@ -15,16 +18,18 @@ public class menu2 extends menuprincipal{
 		int choixmenu = menu.nextInt();
 		
         switch (choixmenu) {
-            case 1:  
+            case 1:  super.enregistrercartegraphique();
                      break;
-            case 2:  
+            case 2:  super.enregistrerdisquedur();
                      break;
-            case 3:  
+            case 3:  super.enregistrerecran();
                      break;
-            case 4:  System.exit(0);
-                     break;
-            default: 
-                     break;
+            case 4:  super.enregistrerimprimante();
+            		 break;
+            case 5:  super.enregistrerunitecentrale();
+            		 break;
+            case 6:  new menuprincipal();
+            		 break;
         }
 	}
 }

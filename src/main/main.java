@@ -52,7 +52,7 @@ public class main {
 /*AFFICHER LES UC*/
 /*************************************************/
 								
-		emplacement emp5 = new emplacement ("Etagere des Unités centrales");
+		emplacement emp5 = new emplacement ("Etagere des Unites centrales");
 		emp5.ajouter(uc1);
 				
 /*************************************************/
